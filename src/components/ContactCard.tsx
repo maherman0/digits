@@ -1,8 +1,7 @@
-
 'use client';
 
 import { Card, Image } from 'react-bootstrap';
-import type { Contact } from '@/lib/validationSchemas';
+import type { Contact } from '@prisma/client';
 
 const ContactCard = ({ contact }: { contact: Contact }) => (
   <Card className="h-100">
