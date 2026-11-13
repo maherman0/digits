@@ -20,16 +20,16 @@ const NavBar: React.FC = () => {
           <Nav className="me-auto justify-content-start">
             {currentUser && (
               <>
-                <Nav.Link id="add-stuff-nav" href="/add" active={pathName === '/add'}>
+                <Nav.Link id="add-contact-nav" href="/add" active={pathName === '/add'}>
                   Add Contacts
                 </Nav.Link>
-                <Nav.Link id="list-stuff-nav" href="/list" active={pathName === '/list'}>
+                <Nav.Link id="list-contacts-nav" href="/list" active={pathName === '/list'}>
                   List Contacts
                 </Nav.Link>
               </>
             )}
             {currentUser && role === 'ADMIN' && (
-              <Nav.Link id="admin-stuff-nav" href="/admin" active={pathName === '/admin'}>
+              <Nav.Link id="admin-nav" href="/admin" active={pathName === '/admin'}>
                 Admin
               </Nav.Link>
             )}

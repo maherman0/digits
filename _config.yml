@@ -1,8 +1,12 @@
-title: nextjs-application-template
-description: A template for quickly starting Next.js application development
-google_analytics:
-show_downloads: true
+title: Digits
+description: A Next.js contact manager with timestamped notes, built for ICS 314
+show_downloads: false
 theme: jekyll-theme-cayman
-
-gems:
-  - jekyll-mentions
+exclude:
+  - node_modules
+  - src
+  - tests
+  - prisma
+  - config
+  - public
+  - checklists

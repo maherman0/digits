@@ -21,6 +21,13 @@ const ContactCard = ({ contact, notes }: { contact: Contact; notes: Note[] }) =>
         </Card.Title>
         <Card.Subtitle className="text-muted">{contact.address}</Card.Subtitle>
       </div>
+      <Link
+        href={`/edit/${contact.id}`}
+        id={`edit-contact-${contact.id}`}
+        className="btn btn-outline-primary btn-sm ms-auto"
+      >
+        Edit
+      </Link>
     </Card.Header>
     <Card.Body>
       <Card.Text>{contact.description}</Card.Text>
@@ -31,9 +38,6 @@ const ContactCard = ({ contact, notes }: { contact: Contact; notes: Note[] }) =>
       </ListGroup>
       <AddNoteForm contactId={contact.id} />
     </Card.Body>
-    <Card.Footer>
-      <Link href={`/edit/${contact.id}`}>Edit</Link>
-    </Card.Footer>
   </Card>
 );
 

@@ -4,7 +4,7 @@ import { loggedInProtectedPage } from '@/lib/page-protection';
 import { auth } from '@/lib/auth';
 import ContactCard from '@/components/ContactCard';
 
-/** Render a list of stuff for the logged in user. */
+/** Render a list of contacts for the logged in user. */
 const ListPage = async () => {
   // Protect the page, only logged in users can access it.
   const session = await auth();
@@ -24,7 +24,6 @@ const ListPage = async () => {
       owner,
     },
   });
-  // console.log(stuff);
   return (
     <main>
       <Container id="list" className="py-3">
